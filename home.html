@@ -1,0 +1,244 @@
+<html><head>
+        <link rel="image/icon" href="echoIcon.ico.ico">
+        <meta name="keywords" content="Kościuszki Echo">
+        <meta name="description" content="Sklep PHU Echo Biłgoraj">
+        <title>Sklep Echo Biłgoraj</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="style/style.css" rel="stylesheet" type="text/css">
+        <script src="script/scriptEcho.js">
+</script>
+    </head><body onload="counting()">
+        
+        <!-- Static navbar -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" id="webLogoImg"><img height="20" alt="Brand" src="image/echo_logo2.png" class="img-thumbnail"></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse in" aria-expanded="true">
+                    <ul class="nav navbar-nav">
+                        <li class="">
+                            <a></a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a id="watch">Godziny</a>
+                        </li>
+                        <li class="active">
+                            <a href="#">Strona <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li>
+                            <a href="#tableHome">Godziny</a>
+                        </li>
+                        <li>
+                            <a href="#map-container">Mapa</a>
+                        </li>
+                        <li>
+                            <a href="#infoFooter">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+            <!--/.container-fluid -->
+        </nav>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="carousel-example" data-interval="5000" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="active item" id="spring">
+                                    <img src="image\Spring\1.jpg">
+                                    <div class="carousel-caption">
+                                        <h1 id="springH1"><span class="label label-success">Wiosna</span></h1>
+                                        <p>Dziekujemy</p>
+                                    </div>
+                                </div>
+                                <div class="item" id="summer">
+                                    <img src="image\Summer\1.jpg">
+                                    <div class="carousel-caption">
+                                        <h1 id="summerH1"><span class="label label-warning">Lato</span></h1>
+                                        <p>Wszystkim</p>
+                                    </div>
+                                </div>
+                                <div class="item" id="autumn">
+                                    <img src="image\Autumn\1.jpg">
+                                    <div class="carousel-caption">
+                                        <h1 id="atumnH1"><span class="label label-danger">Jesień</span></h1>
+                                        <p>Naszym</p>
+                                    </div>
+                                </div>
+                                <div class="item" id="winter">
+                                    <img src="image\Winter\1.jpg">
+                                    <div class="carousel-caption">
+                                        <h1 id="winterH1"><span class="label label-primary">Zima</span></h1>
+                                        <p>Klientom</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-example" data-slide="prev"><i class="icon-prev  fa fa-angle-left"></i></a>
+                            <a class="right carousel-control" href="#carousel-example" data-slide="next"><i class="icon-next fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <table class="table table-condensed table-striped" id="tableHome">
+                            <tbody>
+                                <tr id="list1">
+                                    <td>Poniedzialek</td>
+                                    <td>9.00</td>
+                                    <td>17.00</td>
+                                </tr>
+                                <tr id="list2">
+                                    <td>Wtorek</td>
+                                    <td>9.00</td>
+                                    <td>17.00</td>
+                                </tr>
+                                <tr id="list3">
+                                    <td>Środa</td>
+                                    <td>9.00</td>
+                                    <td>17.00</td>
+                                </tr>
+                                <tr id="list4">
+                                    <td>Czwartek</td>
+                                    <td>9.00</td>
+                                    <td>17.00</td>
+                                </tr>
+                                <tr id="list5">
+                                    <td>Piątek</td>
+                                    <td>9.00</td>
+                                    <td>17.00</td>
+                                </tr>
+                                <tr id="list6">
+                                    <td>Sobota</td>
+                                    <td>9.00</td>
+                                    <td>14.00</td>
+                                </tr>
+                                <tr id="list0">
+                                    <td>Niedziela</td>
+                                    <td>Nieczynne</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                            <thead>
+                                <tr>
+                                    <th>Godziny Otwarcia:</th>
+                                    <th>Od:</th>
+                                    <th>Do:</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="carousel-example" data-interval="false" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                               
+                                <div class="item" id="opening">
+                                    <img src="image\Extra\open.jpg">
+                                    <div class="carousel-caption">
+                                        <h1 id="solidCarouselTitle"><span class="label label-success">Sklep Otwarty</span> Zamknięcie sklepu za:</h1>
+                                        <p><div id="open"></div></p>
+                                    </div>
+                                </div>
+                                
+                                <div class="item" id="closing">
+                                    <img src="image\Extra\close.jpg">
+                                    <div class="carousel-caption">
+                                        <h1><span class="label label-danger">Sklep Zamknięty</span> Otwarcie sklepu za: </h1>
+                                        <p><div id="close"></div></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="carousel-example" data-interval="false" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="active hidden-sm hidden-xs item" id="tempCarousel">
+                                    <img src="image\Extra\sign.jpg">
+                                    <div class="carousel-caption">
+                                        <h2>Mapa</h2>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-justify" id="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2536.013149327148!2d22.718775867031294!3d50.533926291017515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472335dece90254b%3A0xd16143a61c9b2ae8!2sECHO!5e0!3m2!1sen!2suk!4v1486321584521" frameborder="0" style="border:0" width="100%" height="380"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="section section-primary" id="infoFooter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h1>Nasz Adres:</h1>
+                        <p>P.H.U. Echo
+                            <br>Tadeusza Kościuszki 56,
+                            <br>23-400,
+                            <br>Biłgoraj
+                            <br>Tel: 501 072 889
+                            <br>
+                        </p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="text-info text-right">
+                            <br>
+                            <br>
+                        </p>
+                        <div class="row">
+                            <div class="col-md-12 hidden-lg hidden-md hidden-sm text-left">
+                                <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
+                                <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+                                <a href="https://www.facebook.com/julek.sobczak.75?fref=ts"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
+                                <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 hidden-xs text-right">
+                                <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
+                                <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+                                <a href="https://www.facebook.com/julek.sobczak.75?fref=ts"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
+                                <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="./Navbar Template for Bootstrap_files/jquery.min.js.download"></script>
+        <script>
+            window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+        </script>
+        <script src="./Navbar Template for Bootstrap_files/bootstrap.min.js.download"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="./Navbar Template for Bootstrap_files/ie10-viewport-bug-workaround.js.download"></script>
+    
+
+</body></html>
